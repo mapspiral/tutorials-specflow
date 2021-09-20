@@ -7,11 +7,16 @@ Link to a feature: [Calculator]($projectname$/Features/Calculator.feature)
 
 @basics
 Scenario: Add two numbers
-	Given the first number is 50
-	And the second number is 70
+	Given the first number is <First>
+	And the second number is <Second>
 	When the two numbers are added
-	Then the result should be 120
-	
+	Then the result should be <Result>
+	Examples: 
+		| First | Second | Result |
+		| 50    | 70     | 120    |
+		| 30    | 40     | 70     |
+		| 60    | 30     | 90     |
+
 @basics 
 Scenario: Subtract two numbers
 	Given the first number is 120
