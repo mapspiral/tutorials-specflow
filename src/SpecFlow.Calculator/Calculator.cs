@@ -15,5 +15,7 @@ namespace SpecFlow.Calculator
         public int SecondNumber { get; set; }
 
         public int Add() => FirstNumber + SecondNumber;
+
+        public int Subtract() => FirstNumber - SecondNumber;
     }
 }
